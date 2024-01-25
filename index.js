@@ -35,7 +35,7 @@ let user = {
     isloggedin: true
 }
 
-function log(params) {
+function log() {
     if (user.isloggedin == true) {
         console.log(user.firstname, user.lastname);
     }
@@ -46,8 +46,37 @@ function log(params) {
 log()
 
 
+// 4
+let array2 = [2, 4, 13, 1, 4, 18]
+
+function sam (ragac){
+
+    for(j = 0; j < ragac.length; j++){
+        if(ragac[j] > ragac.length){
+            console.log(ragac[j]);
+        }
+    }
+}
+sam(array2)
+
+
+// 5
+function luwikenti(lk) {
+
+    lk = 8
+
+    if(lk % 2 == 0){
+        console.log("this number is even");
+    }
+    else{
+        console.log("this number is odd");
+    }
+}
+luwikenti()
+
+
 // 6
-let array1 = [1, 2, 3, 4, 5];
+let array3 = [1, 2, 3, 4, 5];
 
 function reverse(arr) {
 
@@ -56,7 +85,22 @@ function reverse(arr) {
     }
     return arr[i]
 }
-console.log(reverse(array1));
+console.log(reverse(array3));
+
+
+// 7
+let userAge = (age) => {
+
+    age = 17 
+
+    if(age >= 18){
+        console.log("სრულწლოვანი");
+    }
+    else{
+        console.log("არასრულწლოვანი");
+    }
+}
+userAge()
 
 
 // 8
